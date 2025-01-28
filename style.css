@@ -16,6 +16,7 @@ body {
   text-align: center;
   font-weight: bold;
 }
+
 .container {
   height: 60vh;
   padding: 20px;
@@ -48,7 +49,8 @@ body {
   color: black;
 }
 
-.reset {
+.reset,
+.new-game {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #0a9649;
@@ -65,17 +67,6 @@ body {
   padding-bottom: 1%;
   background-color: #98b6b1;
   font-weight: bold;
-}
-
-.new-game {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #0a9649;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
 }
 
 .msg-container {
@@ -97,4 +88,64 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
   font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-box {
+    height: 80vmin;
+    width: 80vmin;
+    gap: 2vmin;
+  }
+
+  .box {
+    height: 22vmin;
+    width: 22vmin;
+    font-size: 10vmin;
+  }
+
+  .msg-container {
+    gap: 2rem;
+  }
+
+  .reset,
+  .new-game {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #heading {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .game-box {
+    height: 90vmin;
+    width: 90vmin;
+    gap: 1.5vmin;
+  }
+
+  .box {
+    height: 25vmin;
+    width: 25vmin;
+    font-size: 12vmin;
+  }
+
+  .msg-container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .reset,
+  .new-game {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 10px 0;
+  }
 }
